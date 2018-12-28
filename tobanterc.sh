@@ -1,10 +1,6 @@
 # User configuration
-export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
-
-# PATH
-export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/bin
 
 # C++ / JUCE
@@ -16,6 +12,8 @@ export ANDROID_SDK=$HOME/Android/Sdk
 
 # GOLANG
 export GOPATH=$HOME/go
-export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
+
 
 

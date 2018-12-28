@@ -7,5 +7,9 @@ cwd=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 mkdir -p $HOME/.config/nvim
 ln -sf $cwd/neovim/* $HOME/.config/nvim
 
+# NEOVIM
+mkdir -p $HOME/.config/i3
+ln -sf $cwd/i3/* $HOME/.config/i3
+
 # ENV VARIABLES
 ln -sf $cwd/tobanterc.sh $HOME/
