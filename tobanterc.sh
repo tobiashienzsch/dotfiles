@@ -2,9 +2,11 @@
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export PATH=$PATH:$HOME/bin
+export DEVPATH=$HOME/Developer
+export CDPATH=$HOME:$CDPATH
 
 # C++ / JUCE
-export JUCEPATH=$HOME/Developer/lib/JUCE
+export JUCEPATH=$DEVPATH/lib/JUCE
 export PATH=$JUCEPATH/extras/Projucer/Builds/LinuxMakefile/build:$PATH
 
 # ANDROID
