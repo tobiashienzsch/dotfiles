@@ -40,5 +40,10 @@ ln -sf $cwd/i3status/* $HOME/.config/i3status
 check_if_program_exists compton
 ln -sf $cwd/compton/* $HOME/.config
 
+# NITROGEN
+check_if_program_exists nitrogen
+mkdir -p $HOME/.config/nitrogen
+ln -sf $cwd/nitrogen/* $HOME/.config/nitrogen
+
 # ENV VARIABLES
 ln -sf $cwd/tobanterc.sh $HOME/

@@ -170,4 +170,4 @@ exec "xrandr --output eDP-1-1 --left-of HDMI-0 --auto"
 
 # AUTOSTART
 exec --no-startup-id "compton -cC"
-# exec --no-startup-id "nitrogen --restore"
+exec --no-startup-id "nitrogen --restore"
