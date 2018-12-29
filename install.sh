@@ -31,5 +31,14 @@ check_if_program_exists i3
 mkdir -p $HOME/.config/i3
 ln -sf $cwd/i3/* $HOME/.config/i3
 
+# I3 STATUS
+check_if_program_exists i3status
+mkdir -p $HOME/.config/i3status
+ln -sf $cwd/i3status/* $HOME/.config/i3status
+
+# COMPTON
+check_if_program_exists compton
+ln -sf $cwd/compton/* $HOME/.config
+
 # ENV VARIABLES
 ln -sf $cwd/tobanterc.sh $HOME/
