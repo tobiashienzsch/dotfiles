@@ -20,6 +20,9 @@ check_if_program_exists()
 fi
 }
 
+# ZSH
+check_if_program_exists zsh
+ln -sf $cwd/zsh/.zshrc $HOME/
 
 # NEOVIM
 check_if_program_exists nvim
@@ -49,6 +52,3 @@ ln -sf $cwd/nitrogen/* $HOME/.config/nitrogen
 # check_if_program_exists trizen
 # mkdir -p $HOME/.config/trizen
 # ln -sf $cwd/trizen/* $HOME/.config/trizen
-
-# ENV VARIABLES
-ln -sf $cwd/tobanterc.sh $HOME/
