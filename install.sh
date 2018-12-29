@@ -45,5 +45,10 @@ check_if_program_exists nitrogen
 mkdir -p $HOME/.config/nitrogen
 ln -sf $cwd/nitrogen/* $HOME/.config/nitrogen
 
+# TRIZEN
+# check_if_program_exists trizen
+# mkdir -p $HOME/.config/trizen
+# ln -sf $cwd/trizen/* $HOME/.config/trizen
+
 # ENV VARIABLES
 ln -sf $cwd/tobanterc.sh $HOME/
