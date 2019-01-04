@@ -7,7 +7,7 @@
 
 cwd=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 
-# Checks if the program is installed, 
+# Checks if the program is installed,
 # for which the config is loaded
 check_if_program_exists()
 {
@@ -28,7 +28,7 @@ ln -sf $cwd/zsh/.zshrc $HOME/
 check_if_program_exists nvim
 mkdir -p $HOME/.config/nvim
 ln -sf $cwd/neovim/* $HOME/.config/nvim
-
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # I3
 check_if_program_exists i3
 mkdir -p $HOME/.config/i3
