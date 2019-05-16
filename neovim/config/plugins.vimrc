@@ -10,7 +10,6 @@ Plug 'mhartington/oceanic-next'
 """ GENERAL
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'                                     " FILE FINDER
-Plug 'vhdirk/vim-cmake'                                   " CMAKE INTEGRATION
 Plug 'vim-airline/vim-airline'                            " STATUS BAR
 Plug 'vim-airline/vim-airline-themes'                     " STATUS BAR THEME
 Plug 'edkolev/tmuxline.vim'                               " TMUX THEME FOLLOWS STATUS BAR
