@@ -77,7 +77,7 @@ install_nitrogen()
     ln -sf $cwd/nitrogen/* $HOME/.config/nitrogen
 }
 
-install_nitrogen()
+install_trizen()
 {
     # TRIZEN
     check_if_program_exists trizen
@@ -100,5 +100,6 @@ if [ "$1" == "all" ]; then
     install_neovim
     install_i3
     install_compton
-    install_nitrogen # ArchLinux only
+    install_nitrogen
+    install_trizen # ArchLinux only
 fi
