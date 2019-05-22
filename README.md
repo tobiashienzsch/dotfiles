@@ -7,6 +7,7 @@ Collection of my unix dotfiles.
 ## Programs
 
 - zsh
+- git
 - neovim
 - i3
 - i3status
