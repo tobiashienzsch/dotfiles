@@ -1,0 +1,6 @@
+[user]
+	name = Tobias Hienzsch
+	email = post@tobias-hienzsch.de
+
+[core]
+  whitespace = fix,-indent-with-non-tab,trailing-space

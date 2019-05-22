@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script installs dotfiles onto a unix like
 # system. It checks if all programs are available,
@@ -19,7 +19,7 @@ check_if_program_exists()
 {
     PROGRAM=$1  shift;
     COMMENTS=$@
-    
+
     if ! [ -x "$(command -v $PROGRAM)" ]; then
         echo 'Error: '$PROGRAM' is not installed.' >&2
         exit 1
@@ -29,16 +29,23 @@ check_if_program_exists()
 install_zsh()
 {
     # ZSH
-    check_if_program_exists zsh
+    #check_if_program_exists zsh
     echo "zsh"
     ln -sf $cwd/zsh/.zshrc $HOME/
 }
 
+install_git()
+{
+    # GIT
+    #check_if_program_exists git
+    echo "git"
+    ln -sf $cwd/git/.gitconfig $HOME/
+}
 
 install_neovim()
 {
     # NEOVIM
-    check_if_program_exists nvim
+    #check_if_program_exists nvim
     echo "neovim"
     mkdir -p $HOME/.config/nvim
     ln -sf $cwd/neovim/* $HOME/.config/nvim
@@ -52,7 +59,7 @@ install_i3()
     echo "i3"
     mkdir -p $HOME/.config/i3
     ln -sf $cwd/i3/* $HOME/.config/i3
-    
+
     # I3 STATUS
     check_if_program_exists i3status
     mkdir -p $HOME/.config/i3status
@@ -92,11 +99,13 @@ fi
 
 if [ "$1" == "basic" ]; then
     install_zsh
+    install_git
     install_neovim
 fi
 
 if [ "$1" == "all" ]; then
     install_zsh
+    install_git
     install_neovim
     install_i3
     install_compton
