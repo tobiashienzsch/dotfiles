@@ -18,6 +18,8 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=/usr/local/bin:$PATH
 export DEVPATH=$HOME/Developer
 export CDPATH=$HOME:$CDPATH
 
@@ -37,4 +39,4 @@ export PATH=$PATH:/usr/local/go/bin
 alias vim="nvim"
 alias ohmyzsh="nvim $HOME/.oh-my-zsh"
 alias zshconfig="nvim $HOME/.zshrc"
-
+alias sshconfig="nvim $HOME/.ssh/config"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script installs dotfiles onto a unix like
-# system. It creates the config folders and simlinks 
+# system. It creates the config folders and simlinks
 # the content of this repo to the created locations.
 
 CWD=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
@@ -33,6 +33,7 @@ install_neovim()
     mkdir -p $HOME/.config/nvim
     ln -sf $CWD/neovim/* $HOME/.config/nvim
     curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    git clone https://github.com/1995parham/buffalo.zsh ~/.oh-my-zsh/custom/plugins/buffalo
 }
 
 install_i3()
