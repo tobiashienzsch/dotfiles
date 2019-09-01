@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 # USER CONFIG
 export LANG=en_US.UTF-8
-export EDITOR='nvim'
+export EDITOR='vim'
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=/usr/local/bin:$PATH
@@ -36,7 +36,6 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 
 # ALIASES
-alias vim="nvim"
-alias ohmyzsh="nvim $HOME/.oh-my-zsh"
-alias zshconfig="nvim $HOME/.zshrc"
-alias sshconfig="nvim $HOME/.ssh/config"
+alias ohmyzsh="vim $HOME/.oh-my-zsh"
+alias zshconfig="vim $HOME/.zshrc"
+alias sshconfig="vim $HOME/.ssh/config"
