@@ -37,8 +37,8 @@ set directory=~/.local/share/nvim/backup
 
 " FILE ENCODING
 set ffs=unix,dos,mac            " Unix as standard file type
-set termencoding=utf-8          " Always utf8
-set fileencoding=utf-8          " set encoding=utf-8
+"set termencoding=utf-8          " Always utf8
+"set fileencoding=utf-8          " set encoding=utf-8
 
 " SCROLLING
 set so=5 " scroll lines above/below cursor

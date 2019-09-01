@@ -17,6 +17,7 @@ install_zsh()
     # ZSH
     echo "zsh"
     ln -sf $CWD/zsh/.zshrc $HOME/
+    git clone https://github.com/1995parham/buffalo.zsh ~/.oh-my-zsh/custom/plugins/buffalo
 }
 
 install_git()
@@ -26,14 +27,13 @@ install_git()
     ln -sf $CWD/git/.gitconfig $HOME/
 }
 
-install_neovim()
+install_vim()
 {
-    # NEOVIM
-    echo "neovim"
-    mkdir -p $HOME/.config/nvim
-    ln -sf $CWD/neovim/* $HOME/.config/nvim
-    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    git clone https://github.com/1995parham/buffalo.zsh ~/.oh-my-zsh/custom/plugins/buffalo
+    # VIM
+    echo "vim"
+    mkdir -p $HOME/.vim
+    ln -sf $CWD/vim/.vimrc $HOME/
+    ln -sf $CWD/vim/.vim/* $HOME/.vim
 }
 
 install_i3()
@@ -79,13 +79,13 @@ fi
 if [ "$1" == "basic" ]; then
     install_zsh
     install_git
-    install_neovim
+    install_vim
 fi
 
 if [ "$1" == "all" ]; then
     install_zsh
     install_git
-    install_neovim
+    install_vim
     install_i3
     install_compton
     install_nitrogen
