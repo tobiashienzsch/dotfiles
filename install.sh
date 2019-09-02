@@ -14,7 +14,6 @@ show_help()
 
 install_zsh()
 {
-    # ZSH
     echo "zsh"
     ln -sf $CWD/zsh/.zshrc $HOME/
     git clone https://github.com/1995parham/buffalo.zsh ~/.oh-my-zsh/custom/plugins/buffalo
@@ -22,14 +21,12 @@ install_zsh()
 
 install_git()
 {
-    # GIT
     echo "git"
     ln -sf $CWD/git/.gitconfig $HOME/
 }
 
 install_vim()
 {
-    # VIM
     echo "vim"
     mkdir -p $HOME/.vim
     ln -sf $CWD/vim/.vimrc $HOME/
@@ -38,19 +35,16 @@ install_vim()
 
 install_i3()
 {
-    # I3
     echo "i3"
     mkdir -p $HOME/.config/i3
     ln -sf $CWD/i3/* $HOME/.config/i3
 
-    # I3 STATUS
     mkdir -p $HOME/.config/i3status
     ln -sf $CWD/i3status/* $HOME/.config/i3status
 }
 
 install_compton()
 {
-    # COMPTON
     echo "compton"
     ln -sf $CWD/compton/* $HOME/.config
 }
@@ -58,7 +52,6 @@ install_compton()
 
 install_nitrogen()
 {
-    # NITROGEN
     echo "nitrogen"
     mkdir -p $HOME/.config/nitrogen
     ln -sf $CWD/nitrogen/* $HOME/.config/nitrogen
@@ -66,7 +59,6 @@ install_nitrogen()
 
 install_trizen()
 {
-    # TRIZEN
     echo "nitrogen"
     mkdir -p $HOME/.config/trizen
     ln -sf $CWD/trizen/* $HOME/.config/trizen
@@ -89,5 +81,5 @@ if [ "$1" == "all" ]; then
     install_i3
     install_compton
     install_nitrogen
-    install_trizen # ArchLinux only
+    install_trizen # ArchLinux only (AUR manager)
 fi
