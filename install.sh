@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script installs dotfiles onto a unix like
 # system. It creates the config folders and simlinks
