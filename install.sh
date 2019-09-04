@@ -28,7 +28,8 @@ install_git()
 install_vim()
 {
     echo "vim"
-    mkdir -p $HOME/.vim
+    mkdir -p $HOME/.vim/undodir
+    mkdir -p $HOME/.vim/backup
     ln -sf $CWD/vim/.vimrc $HOME/
     ln -sf $CWD/vim/.vim/* $HOME/.vim
 }

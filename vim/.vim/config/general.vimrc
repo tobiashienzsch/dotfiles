@@ -26,14 +26,14 @@ else
 endif
 
 " UNDO
-set undodir=~/.local/share/nvim/undodir
+set undodir=~/.vim/undodir
 set undofile
 set undolevels=100
 set undoreload=1000
 
 " BACKUP
-set backupdir=~/.local/share/nvim/backup
-set directory=~/.local/share/nvim/backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
 
 " FILE ENCODING
 set ffs=unix,dos,mac            " Unix as standard file type
