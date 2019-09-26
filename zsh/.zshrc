@@ -26,7 +26,7 @@ export CDPATH=$HOME:$CDPATH
 # C++ / JUCE
 export JUCEPATH=$DEVPATH/lib/JUCE
 export PATH=$JUCEPATH/extras/Projucer/Builds/LinuxMakefile/build:$PATH
-
+export PATH=$JUCEPATH/extras/Projucer/Builds/MacOSX/build/Release/Projucer.app/Contents/MacOS:$PATH
 # ANDROID
 export ANDROID_SDK=$HOME/Android/Sdk
 
