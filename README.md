@@ -23,3 +23,10 @@ Run the script. It tells you which applications are missing.
 ./install.sh basic # zsh & vim only
 ./install.sh all   # i3, compton, nitrogen & trizen
 ```
+
+## Extra Tools
+
+- `icdiff` Diff tool with color
+- `ranger` Terminal file explorer
+- [`aria2`](https://aria2.github.io/) Download tool. (multiple threads & sources)
+- `fd` Simpler find
