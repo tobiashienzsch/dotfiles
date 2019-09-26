@@ -60,7 +60,8 @@ install_nitrogen()
 
 install_trizen()
 {
-    echo "nitrogen"
+    echo "trizen"
+    mkdir -p $HOME/.AUR
     mkdir -p $HOME/.config/trizen
     ln -sf $CWD/trizen/* $HOME/.config/trizen
 }
