@@ -12,6 +12,13 @@ show_help()
     exit 1
 }
 
+install_bin_scripts()
+{
+    echo "~/bin"
+    mkdir -p $HOME/bin
+    ln -sf $CWD/bin/* $HOME/bin
+}
+
 install_zsh()
 {
     echo "zsh"
@@ -71,12 +78,14 @@ if [ "$1" == "" ]; then
 fi
 
 if [ "$1" == "basic" ]; then
+    install_bin_scripts
     install_zsh
     install_git
     install_vim
 fi
 
 if [ "$1" == "all" ]; then
+    install_bin_scripts
     install_zsh
     install_git
     install_vim

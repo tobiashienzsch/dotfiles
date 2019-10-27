@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# Terminal weather forcast.
+
+
+show_help()
+{
+    echo "Usage: $0 [city]"
+    exit 1
+}
+
+if [ "$1" == "" ]; then
+    show_help
+fi
+
+curl https://wttr.in/"$1"
