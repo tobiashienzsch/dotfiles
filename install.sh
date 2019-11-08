@@ -16,7 +16,7 @@ install_bin_scripts()
 {
     echo "$HOME/bin"
     mkdir -p "$HOME/bin"
-    ln -sf "$CWD/bin/*" "$HOME/bin"
+    ln -sf $CWD/bin/* "$HOME/bin"
 }
 
 install_zsh()
@@ -38,23 +38,23 @@ install_vim()
     mkdir -p "$HOME/.vim/undodir"
     mkdir -p "$HOME/.vim/backup"
     ln -sf "$CWD/vim/.vimrc" "$HOME/"
-    ln -sf "$CWD/vim/.vim/*" "$HOME/.vim"
+    ln -sf $CWD/vim/.vim/* "$HOME/.vim"
 }
 
 install_i3()
 {
     echo "i3"
     mkdir -p "$HOME/.config/i3"
-    ln -sf "$CWD/i3/*" "$HOME/.config/i3"
+    ln -sf $CWD/i3/* "$HOME/.config/i3"
 
     mkdir -p "$HOME/.config/i3status"
-    ln -sf "$CWD/i3status/*" "$HOME/.config/i3status"
+    ln -sf $CWD/i3status/* "$HOME/.config/i3status"
 }
 
 install_compton()
 {
     echo "compton"
-    ln -sf "$CWD/compton/*" "$HOME/.config"
+    ln -sf $CWD/compton/* "$HOME/.config"
 }
 
 
@@ -62,7 +62,7 @@ install_nitrogen()
 {
     echo "nitrogen"
     mkdir -p "$HOME/.config/nitrogen"
-    ln -sf "$CWD/nitrogen/*" "$HOME/.config/nitrogen"
+    ln -sf $CWD/nitrogen/* "$HOME/.config/nitrogen"
 }
 
 install_trizen()
@@ -70,7 +70,7 @@ install_trizen()
     echo "trizen"
     mkdir -p "$HOME/.AUR"
     mkdir -p "$HOME/.config/trizen"
-    ln -sf "$CWD/trizen/*" "$HOME/.config/trizen"
+    ln -sf $CWD/trizen/* "$HOME/.config/trizen"
 }
 
 if [ "$1" == "" ]; then
