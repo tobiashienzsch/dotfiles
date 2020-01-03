@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-YOCTO_DRIVE="/dev/sdb1"
+YOCTO_DRIVE="/dev/sdc1"
 YOCTO_DRIVE_NAME=YOCTO
 YOCTO_MOUNT_POINT="/yocto"
 
