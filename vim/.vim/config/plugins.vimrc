@@ -11,15 +11,15 @@ call plug#begin()
 Plug 'mhartington/oceanic-next'
 Plug 'vim-airline/vim-airline'                            " STATUS BAR
 Plug 'vim-airline/vim-airline-themes'                     " STATUS BAR THEME
-
-Plug 'kien/ctrlp.vim'                                     " FILE FINDER
 Plug 'edkolev/tmuxline.vim'                               " TMUX THEME FOLLOWS STATUS BAR
-" Plug 'myitcv/govim'                                       " GOLANG
-Plug 'tpope/vim-eunuch'                                   " UNIX TOOLS
-Plug 'tpope/vim-fugitive'                                 " GIT
+
+Plug 'scrooloose/nerdtree'                                " FILE BROWSER
+Plug 'Xuyuanp/nerdtree-git-plugin'                        " FILE BROWSER GIT
 
 call plug#end()
 
-" CTRL-P
-set wildmenu " enhanced autocomplete
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*node_modules*,*.jpg,*.png,*.svg,*.ttf,*.woff,*.woff3,*.eot,*.pyc
+" NERDTREE
+" OPEN WITH CTRL-P
+map <C-p> :NERDTreeToggle<CR>
+" CLOSE VIM IF ONLY NERDTREE IS LEFT OPEN
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

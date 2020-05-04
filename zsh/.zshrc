@@ -18,6 +18,7 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='vim'
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/bin/Postman
 export PATH=$PATH:$HOME/.local/bin
 export PATH=/usr/local/bin:$PATH
 export DEVPATH=$HOME/Developer
@@ -26,7 +27,7 @@ export CDPATH=$HOME:$CDPATH
 # macOS
 
 # C++ / JUCE
-export JUCEPATH=$DEVPATH/lib/JUCE
+export JUCEPATH=$HOME/.builds/JUCE
 export PATH=$JUCEPATH/extras/Projucer/Builds/LinuxMakefile/build:$PATH
 export PATH=$JUCEPATH/extras/Projucer/Builds/MacOSX/build/Release/Projucer.app/Contents/MacOS:$PATH
 export PATH=/Volumes/MacintoshSSD/Applications/Projucer.app/Contents/MacOS:$PATH
@@ -37,6 +38,7 @@ export PATH=/Users/tobante/bin/gcc-arm-none-eabi-9-2019-q4-major/bin:$PATH
 export ANDROID_SDK=$HOME/Android/Sdk
 
 # GOLANG
+export GO111MODULE="on"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
