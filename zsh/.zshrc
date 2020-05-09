@@ -19,6 +19,8 @@ export LANG=en_US.UTF-8
 export EDITOR='vim'
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/bin/Postman
+export PATH=$PATH:$HOME/bin/clion-2019.3.5/bin
+export PATH=$PATH:$HOME/.yarn/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=/usr/local/bin:$PATH
 export DEVPATH=$HOME/Developer
@@ -26,7 +28,6 @@ export CDPATH=$HOME:$CDPATH
 
 # C++ / JUCE
 export JUCEPATH=$HOME/.builds/JUCE
-export PATH=$JUCEPATH/extras/Projucer/Builds/LinuxMakefile/build:$PATH
 export PATH=$JUCEPATH/extras/Projucer/Builds/MacOSX/build/Release/Projucer.app/Contents/MacOS:$PATH
 # ANDROID
 export ANDROID_SDK=$HOME/Android/Sdk
@@ -41,3 +42,7 @@ export PATH=$PATH:/usr/local/go/bin
 alias ohmyzsh="vim $HOME/.oh-my-zsh"
 alias zshconfig="vim $HOME/.zshrc"
 alias sshconfig="vim $HOME/.ssh/config"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /home/tobante/Developer/moderncircuits/projects/frontend/zentrale/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/tobante/Developer/moderncircuits/projects/frontend/zentrale/node_modules/tabtab/.completions/electron-forge.zsh

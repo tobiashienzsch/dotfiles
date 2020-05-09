@@ -16,6 +16,9 @@ Plug 'edkolev/tmuxline.vim'                               " TMUX THEME FOLLOWS S
 Plug 'scrooloose/nerdtree'                                " FILE BROWSER
 Plug 'Xuyuanp/nerdtree-git-plugin'                        " FILE BROWSER GIT
 
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+
 call plug#end()
 
 " NERDTREE
@@ -23,3 +26,5 @@ call plug#end()
 map <C-p> :NERDTreeToggle<CR>
 " CLOSE VIM IF ONLY NERDTREE IS LEFT OPEN
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+

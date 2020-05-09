@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-YOCTO_DRIVE="/dev/sdc1"
-YOCTO_DRIVE_NAME=YOCTO
+YOCTO_DRIVE="/dev/sdb"
+YOCTO_DRIVE_NAME=moci-yocto
 YOCTO_MOUNT_POINT="/yocto"
 
 # Unlock luks volume
