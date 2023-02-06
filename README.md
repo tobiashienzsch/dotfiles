@@ -9,11 +9,6 @@ Collection of my unix dotfiles.
 - zsh
 - git
 - vim
-- i3
-- i3status
-- nitrogen
-- compton
-- trizen
 
 ## Usage
 
@@ -21,11 +16,11 @@ Run the script. It tells you which applications are missing.
 
 ```sh
 ./install.sh basic # zsh & vim only
-./install.sh all   # i3, compton, nitrogen & trizen
 ```
 
 ## Extra Tools
 
+- `jq` Command-line json viewer
 - `icdiff` Diff tool with color
 - `ranger` Terminal file explorer
 - [`aria2`](https://aria2.github.io/) Download tool. (multiple threads & sources)

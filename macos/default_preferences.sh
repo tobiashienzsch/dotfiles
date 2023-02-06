@@ -8,7 +8,7 @@
 ##############################################################################
 
 # Menu bar: disable transparency
-defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+# defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -110,7 +110,7 @@ defaults write com.apple.dock magnification -bool false
 ##############################################################################
 
 # Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Enable full keyboard access for all controls
 # Essentially allows tabbing in modal dialogs

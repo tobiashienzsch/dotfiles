@@ -19,20 +19,20 @@ install_bin_scripts()
     ln -sf $CWD/bin/* "$HOME/bin"
 }
 
-install_zsh()
+configure_zsh()
 {
     echo "zsh"
     ln -sf "$CWD/zsh/.zshrc" "$HOME/"
     git clone https://github.com/1995parham/buffalo.zsh ~/.oh-my-zsh/custom/plugins/buffalo
 }
 
-install_git()
+configure_git()
 {
     echo "git"
     ln -sf "$CWD/git/.gitconfig" "$HOME/"
 }
 
-install_vim()
+configure_vim()
 {
     echo "vim"
     mkdir -p "$HOME/.vim/undodir"
@@ -41,7 +41,7 @@ install_vim()
     ln -sf $CWD/vim/.vim/* "$HOME/.vim"
 }
 
-install_i3()
+configure_i3()
 {
     echo "i3"
     mkdir -p "$HOME/.config/i3"
@@ -51,26 +51,18 @@ install_i3()
     ln -sf $CWD/i3status/* "$HOME/.config/i3status"
 }
 
-install_compton()
+configure_compton()
 {
     echo "compton"
     ln -sf $CWD/compton/* "$HOME/.config"
 }
 
 
-install_nitrogen()
+configure_nitrogen()
 {
     echo "nitrogen"
     mkdir -p "$HOME/.config/nitrogen"
     ln -sf $CWD/nitrogen/* "$HOME/.config/nitrogen"
-}
-
-install_trizen()
-{
-    echo "trizen"
-    mkdir -p "$HOME/.AUR"
-    mkdir -p "$HOME/.config/trizen"
-    ln -sf $CWD/trizen/* "$HOME/.config/trizen"
 }
 
 if [ "$1" == "" ]; then
@@ -79,18 +71,7 @@ fi
 
 if [ "$1" == "basic" ]; then
     install_bin_scripts
-    install_zsh
-    install_git
-    install_vim
-fi
-
-if [ "$1" == "all" ]; then
-    install_bin_scripts
-    install_zsh
-    install_git
-    install_vim
-    install_i3
-    install_compton
-    install_nitrogen
-    install_trizen # ArchLinux only (AUR manager)
+    configure_zsh
+    configure_git
+    configure_vim
 fi
